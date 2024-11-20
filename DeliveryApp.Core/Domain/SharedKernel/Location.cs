@@ -6,8 +6,8 @@ namespace DeliveryApp.Core.Domain.SharedKernel;
 
 public sealed class Location : ValueObject
 {
-    public int X { get; private set; }
-    public int Y { get; private set; }
+    public int X { get; }
+    public int Y { get; }
 
     public static readonly Location MinLocation = new(1, 1);
 
